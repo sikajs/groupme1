@@ -12,6 +12,7 @@ Groupme1::Application.routes.draw do
 
   namespace :account do
     resources :groups
+    resources :posts
   end
 
   root :to => "groups#index"
