@@ -1,5 +1,8 @@
 Just my practice
 
+Ruby 2.1.2
+Rails 4.0.0
+
 ### Style Guides
 
 * [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide)
