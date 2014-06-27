@@ -20,7 +20,6 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-gem 'devise', '3.0.2'
 gem "seo_helper", "~> 1.0.2"
 gem "open_graph_helper"
 
@@ -42,9 +41,12 @@ gem "airbrake"
 
 gem "rvm-capistrano"
 
+# 3rd party auth
+gem 'devise', '3.0.2'
 gem "omniauth"
 gem "omniauth-facebook"
-gem "auto-facebook", "0.4"
+#gem "auto-facebook", "0.4"
+gem "omniauth-github"
 
 
 gem "whenever"

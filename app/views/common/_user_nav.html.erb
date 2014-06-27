@@ -1,8 +1,8 @@
 <ul class="nav pills pull-right">
 
-    <li>
+ <!--   <li>
       <div class="social"> <%=  fb_like(Setting.domain) %>  </div>
-    </li>
+    </li> -->
 
   <% if current_user %>    
 
@@ -22,7 +22,8 @@
 <% else %>
   <li> <%= link_to( "Sign Up" ,new_user_registration_path) %> </li>
   <li> <%= link_to( "Login", new_user_session_path )  %> </li>   
-  <li> <%= link_to( "FB Login", "/users/auth/facebook" )  %> </li>   
+  <li> <%= link_to( "Github Login", user_omniauth_authorize_path('github') )  %> </li>
+  <li> <%= link_to( "FB Login", "/users/auth/facebook" )  %> </li>
 <% end %>
 
 
