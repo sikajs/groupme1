@@ -67,6 +67,8 @@ group :development do
   gem "powder"
   gem "pry-nav"
   gem "pry-remote"
+  gem "populator"
+  gem "faker"
 end
 
 
