@@ -7,14 +7,15 @@
       <%= link_to("Join group", join_group_path(@group), :method => :post, :class => "btn btn-mini") %>
     <% end %>
     </div>
+  
+    <div class="group pull-right">
+      <% if @group.editable_by?(current_user) %>
+        <%= link_to("Edit", edit_group_path(@group), :class => "btn btn-mini") %>
+      <% end %>
+      <%= link_to("New post", new_group_post_path(@group), :class => "btn btn-mini btn-primary" ) if current_user.is_member_of?(@group)%>
+    </div>
   <% end %>
-  <div class="group pull-right">
-  <% if current_user && @group.editable_by?(current_user) %>
-    <%= link_to("Edit", edit_group_path(@group), :class => "btn btn-mini") %>
-  <% end %>
-    <%= link_to("New post", new_group_post_path(@group), :class => "btn btn-mini btn-primary" ) if current_user.is_member_of?(@group)%>
-  </div>
-
+  
   <h2> <%= @group.title %> </h2>
 
   <p> <%= @group.description %> </p>
