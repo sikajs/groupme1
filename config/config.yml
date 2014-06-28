@@ -11,8 +11,8 @@ defaults: &defaults
   google_analytics_key: ""
   default_logo_url: "/logo.png"
   email_sender: ""
-  github_key: "f01728cbd6576bcfa17b"
-  github_secret: "ed06c3633a65d9e4a51799a1c4679fa2c5811bf1"
+  github_key: 
+  github_secret: 
 
 development:
   <<: *defaults
