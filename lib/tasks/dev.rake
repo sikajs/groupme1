@@ -13,7 +13,7 @@ namespace :dev do
     require "populator"
     require "faker"
 
-    User.populate 50 do |user|
+    User.populate 20 do |user|
       user.email = Faker::Internet.email
       user.encrypted_password = "test1234"
       Group.populate 1..10 do |group|
